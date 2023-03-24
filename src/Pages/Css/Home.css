@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Moon+Dance&family=Piazzolla:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.home_hero {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    background-image: url("http://wallpaperset.com/w/full/b/b/6/465092.jpg");
+    /* background-image: url("http://wallpaperset.com/w/full/b/b/6/465092.jpg");1 */
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    opacity: 0.9;
+    height: 90vh;
+
+}
+
+.home_hero-image {
+    width: 48%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_hero-image>figure>img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.home_hero_info {
+    width: 48%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home_hero_heading {
+    margin-top: 20px;
+    text-align: center;
+    width: 600px;
+    /* border: 2px solid red; */
+}
+
+.home_hero_heading>h1 {
+    font-size: 40px;
+    color: rgb(21, 202, 178);
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.home_hero_heading>h2 {
+    font-size: 28px;
+    color: rgb(53, 143, 234);
+    font-family: 'Varela Round', sans-serif;
+}
+
+.home_hero_para {
+    width: 600px;
+    margin-top: 15px;
+    /* border: 2px solid red; */
+    font-size: 22px;
+}
+
+.home_hero_para>p {
+    text-align: left;
+    padding: 20px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(21, 202, 178);
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #2c9caf;
+    background-color: transparent;
+}
+
+button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid rgb(21, 202, 178);
+    box-shadow: 4px 5px 17px -4px rgb(21, 202, 178);
+    cursor: pointer;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(21, 202, 178);
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+button:hover::before {
+    width: 250%;
+}
+
+.home_products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+
+/* home_qualities Styling */
+.home_qualities {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top:60px;
+    margin-bottom: 20px;
+    background: rgb(60, 197, 251);
+    background: radial-gradient(linear, rgb(82, 201, 248) 0%, rgb(48, 126, 236) 99%);
+}
+
+.home_quality_box {
+    border: 2px solid green;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid white;
+    background: rgba(253, 250, 250, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(210, 210, 211, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 50px;
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+.home_quality_box> .home_quality_heading> .home_quality_icon {
+    font-size: 80px;
+    color: white;
+}
+
+.home_quality_heading > h2{
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+.home_quality_info{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    gap: 7px;
+    font-family: 'Varela Round', sans-serif;
+}
